@@ -10,9 +10,11 @@
 .nav-links a {
   margin-left: 20px;
   font-weight: 600;
+  padding-top: 16px;
   padding-bottom: 16px;
   position: relative;
   /* Ensures the pseudo-element is positioned relative to this element */
+  font-size: clamp(0.75rem, 0.6464rem + 0.442vw, 1rem);
 }
 
 .nav-links a::after {
@@ -36,6 +38,6 @@
 }
 
 .logo {
-  font-size: 30px;
+  font-size: clamp(1.125rem, 0.8142rem + 1.326vw, 1.875rem);
   font-weight: 800;
 }

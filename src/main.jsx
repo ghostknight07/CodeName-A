@@ -9,6 +9,9 @@ import MoviePage from './pages/MoviePage.jsx';
 import RequestPage from './pages/RequestPage.jsx';
 import BlogPage from './pages/BlogPage.jsx';
 
+// in case of any error
+import NotFound from './pages/NotFound.jsx';
+
 // the router will help navigation to different pages 
 // with custom url patterns
 const router = createBrowserRouter([
@@ -19,14 +22,21 @@ const router = createBrowserRouter([
   {
     path: '/movies',
     element: <MoviePage />,
+    errorElement: <NotFound />,
   },
   {
     path: '/blog',
-    element: <BlogPage />,
+    element: <BlogPage />, 
+    errorElement: <NotFound />,
   },
   {
     path: '/request',
     element: <RequestPage />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: '*', // path for any predefined url path
+    element: <NotFound />,
   }
 ]);
 
