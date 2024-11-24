@@ -7,11 +7,11 @@ export default function Navbar() {
         <h1 className='logo'>TIMEJUMP</h1>
       </div>
       <div className='nav-links'>
-        <a href="#">Home</a>
-        <a href="#">Movies</a>
-        <a href="#">Blog</a>
-        <a href="#">Request</a>
-        <a href="#">About Us</a>
+        <a href="/">Home</a>
+        <a href="/movies">Movies</a>
+        <a href="/blog">Blog</a>
+        <a href="/request">Request</a>
+        <a href="/about">About Us</a>
       </div>
     </header>
   )
