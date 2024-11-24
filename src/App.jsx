@@ -1,3 +1,5 @@
+// shall work as home page
+
 import './App.css'
 import Navbar from './components/Navbar.jsx';
 
