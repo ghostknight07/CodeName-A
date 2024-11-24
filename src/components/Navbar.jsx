@@ -11,7 +11,8 @@ export default function Navbar() {
         <a href="/movies">Movies</a>
         <a href="/blog">Blog</a>
         <a href="/request">Request</a>
-        <a href="/about">About Us</a>
+        {/* Don't think an about page is needed. */}
+        {/* <a href="/about">About Us</a> */}
       </div>
     </header>
   )
