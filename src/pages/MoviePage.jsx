@@ -1,9 +1,10 @@
 import Navbar from "../components/Navbar.jsx";
+import MoviePoster from '../components/MoviePoster.jsx';
 
 function MoviePage() {
   return (<main>
     <Navbar />
-    <h1>This is the movie page</h1>
+    <MoviePoster />
   </main>)
 }
 
