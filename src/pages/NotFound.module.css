@@ -1,0 +1,28 @@
+.notfound{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90dvh;
+}
+
+.not-found-main-text{
+  font-size: 120px;
+  font-weight: 300;
+}
+.not-found-header-text{
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.not-found-p{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.not-found-a{
+  color: #38bdf8;
+}
+
+.not-found-a:hover{
+  border-bottom: 2px solid #38bdf8;
+}
