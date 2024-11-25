@@ -2,12 +2,16 @@
 // effect on other elements not even the classes or ids
 import styles from './NotFound.module.css';
 
-export default function NotFound(){
+export default function NotFound() {
   return (
     <div className={styles['notfound']}>
-      <h1 className={styles['not-found-main-text']}>404</h1>
-      <h1 className={styles['not-found-header-text']}>Page Not Found</h1>
-      <p className={styles['not-found-p']}>Take me back to the <a className={styles['not-found-a']} href='/'>Home</a>  page</p>
+      <div className={styles['not-found-content']}>
+        <h1 className={styles['not-found-header-text']}>Page Not Found</h1>
+        <p className={styles['not-found-p']}>The page you are looking for does not exist</p>
+        <a href="/">
+          <button className={styles['not-found-button']}>Back to Home</button>
+        </a>
+      </div>
     </div>
   )
 }
