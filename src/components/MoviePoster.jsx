@@ -1,11 +1,13 @@
+import PropTypes from "prop-types";
+
 // h- 250px
 // w- 150px
 
-export default function MoviePoster() {
+export default function MoviePoster(props) {
   const MoviePosterStyles = {
     height: '250px',
     width: '166px',
-    backgroundImage: "url('https://cdn.marvel.com/content/1x/dp3_1sht_digital_srgb_ka_finger_v3_resized.jpg')",
+    backgroundImage: `url(${props.posterUrl})`,
     borderRadius: '16px', // Test with a solid color
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat', // Prevents the image from repeating
@@ -19,3 +21,8 @@ export default function MoviePoster() {
     </div>
   )
 }
+
+
+MoviePoster.propTypes = {
+  posterUrl: PropTypes.string.isRequired,
+};
