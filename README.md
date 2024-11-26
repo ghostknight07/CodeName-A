@@ -117,7 +117,6 @@ Follow these steps to set up the project locally:
 5. Open your browser and visit:
    ```plaintext
    http://localhost:5173
-
 ## 🚀 Conclusion
 
 Enjoy exploring **TimeJump** and customizing it to your heart's content. Feel free to contribute to the project and make it even better! 💻🎉
