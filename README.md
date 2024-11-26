@@ -75,7 +75,7 @@ A page where users can submit requests for movies they’d like to see added to 
 ---
 
 ## 🛤️ Routing
-TimeJump uses [React Router] (reactrouter.com) for seamless client-side navigation. All routes are defined in `main.jsx`. Each route corresponds to a specific page of the app.
+TimeJump uses [React Router] (https://reactrouter.com/) for seamless client-side navigation. All routes are defined in `main.jsx`. Each route corresponds to a specific page of the app.
 
 ---
 
