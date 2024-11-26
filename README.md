@@ -30,21 +30,18 @@
 Dive into the world of movies with a fast and intuitive interface! 🚀
 
 ---
-
 ## 🗂️ Project Structure
 The project is structured as follows:
 
 ```plaintext
-src/                # Contains the source code for the project
-  components/       # Reusable React components
-  pages/            # Page-level components
-  App.jsx           # The main application component
-  main.jsx          # The entry point for the application
-public/             # Static assets, such as images and fonts
-vite.config.js      # Vite configuration file
-
-
----
+  src/                # Contains the source code for the project
+    components/       # Reusable React components
+    pages/            # Page-level components
+    App.jsx           # The main application component
+    main.jsx          # The entry point for the application
+  public/             # Static assets, such as images and fonts
+  vite.config.js      # Vite configuration file
+```
 
 ## 🧩 Components
 The project features the following reusable components:
