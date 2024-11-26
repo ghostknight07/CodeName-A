@@ -1,3 +1,11 @@
+// instruction
+// you must read the docs of boxicons in
+// case you want to add more icons
+
+import 'boxicons/css/boxicons.min.css';
+
+import './MoviePoster.css';
+
 import PropTypes from "prop-types";
 
 // h- 250px
@@ -17,7 +25,19 @@ export default function MoviePoster(props) {
 
   return (
     <div className='movie-poster'>
-      <div style={MoviePosterStyles}></div>
+
+      <div id="movie-poster-img" style={MoviePosterStyles}>
+
+        <p className='play-text'>
+          {/* an icon with boxicons */}
+          <i className='bx bx-lg bx-play'></i>
+        </p>
+
+      </div>
+
+      {/* movie name */}
+      <div><p>{props.movieName}</p></div>
+
     </div>
   )
 }
@@ -25,4 +45,5 @@ export default function MoviePoster(props) {
 
 MoviePoster.propTypes = {
   posterUrl: PropTypes.string.isRequired,
+  movieName: PropTypes.string.isRequired,
 };
