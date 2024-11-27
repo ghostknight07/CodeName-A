@@ -7,6 +7,7 @@
     cursor: pointer;
     margin: 10px;
     /* Needed for absolute positioning */
+    min-width: 166px;
 }
 
 #movie-poster-img {
