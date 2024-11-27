@@ -59,7 +59,7 @@ We love having people contribute, but we want everyone to have a **positive expe
 
 ## 🛡️ Enforcement
 
-If you experience or witness **abusive, harassing**, or **otherwise unacceptable behavior**, please report it by contacting the project team at [your-email@example.com]. 📩
+If you experience or witness **abusive, harassing**, or **otherwise unacceptable behavior**, please report it by contacting the project team at [dishanishtiaq45@gmail.com]. 📩
 
 All complaints will be reviewed confidentially and handled with the seriousness they deserve. We take this seriously to ensure the community remains a friendly place for everyone. 🙏
 
