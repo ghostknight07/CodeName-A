@@ -2,6 +2,12 @@
 
 ---
 
+## License
+
+This project is licensed under the **GNU General Public License v3**. See the [LICENSE](LICENSE) file for details.
+
+
+---
 ## 📚 Table of Contents
 - [✨ Introduction](#-introduction)
 - [🗂️ Project Structure](#️-project-structure)
