@@ -1,10 +1,11 @@
 import './Navbar.css';
+import Logo from './logo/logo.svg'
 
 export default function Navbar() {
   return (
     <header className="nav-header">
       <div>
-        <h1 className='logo'>TIMEJUMP</h1>
+        <h1 className='logo'><img className='logo-nav' src={Logo} alt={Logo} /></h1>
       </div>
       <div className='nav-links'>
         <a href="/">Home</a>

@@ -5,6 +5,7 @@
     text-align: center;
     position: relative;
     cursor: pointer;
+    margin: 10px;
     /* Needed for absolute positioning */
 }
 
