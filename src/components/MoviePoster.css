@@ -7,7 +7,7 @@
     cursor: pointer;
     margin: 10px;
     /* Needed for absolute positioning */
-    min-width: 166px;
+    min-width: 140px;
 }
 
 #movie-poster-img {
@@ -39,6 +39,7 @@
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
     z-index: 1;
+    border-radius: 10px;
 }
 
 #movie-poster-img:hover::before {
@@ -62,4 +63,12 @@
 
 #movie-poster-img:hover .play-text {
     display: block;
+}
+
+@media screen and (max-width: 582px) {
+
+    #movie-poster-img {
+        height: 224px;
+    }
+
 }

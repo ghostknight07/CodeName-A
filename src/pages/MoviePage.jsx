@@ -1,3 +1,5 @@
+// TODO: add responsive layout grid
+
 import { useState } from "react";
 import Navbar from "../components/Navbar.jsx";
 import MoviePoster from "../components/MoviePoster.jsx";
