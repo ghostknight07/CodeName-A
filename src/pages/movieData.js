@@ -1,3 +1,8 @@
+// this is the file were we will put our movie info
+// be sure to check the patterns first
+// before changing or adding anything. 
+
+
 const movieData = [
     {
         id: 1,
