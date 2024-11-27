@@ -2,9 +2,13 @@
 
 ---
 
-## License
+## 📜 License
 
-This project is licensed under the **GNU General Public License v3**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **[GNU General Public License v3 (GPLv3)](LICENSE)** 📝.
+
+By using this project, you agree to the terms of the license. You can freely use, modify, and distribute the software, but remember to keep it open source! 🔓
+
+For more details, please refer to the [LICENSE](LICENSE) file. 🚀
 
 
 ---
