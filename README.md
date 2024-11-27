@@ -14,6 +14,7 @@ For more details, please refer to the [LICENSE](LICENSE) file. 🚀
 ---
 ## 📚 Table of Contents
 - [✨ Introduction](#-introduction)
+- [🤝 Code of Conduct](#-code-of-conduct)
 - [🗂️ Project Structure](#️-project-structure)
 - [🧩 Components](#-components)
   - [🔗 Navbar](#-navbar)
@@ -39,6 +40,20 @@ For more details, please refer to the [LICENSE](LICENSE) file. 🚀
 - 📬 **Request Page**
 
 Dive into the world of movies with a fast and intuitive interface! 🚀
+
+---
+
+## 🤝 **Code of Conduct** 📜
+
+We believe in creating a **welcoming**, **friendly**, and **collaborative** space for everyone at **TimeJump**. To help us maintain a **positive atmosphere**, we ask all contributors to follow our **Code of Conduct**. 💬✨
+
+By participating in this project, you're agreeing to uphold these principles, ensuring that **everyone** feels respected and included. ❤️
+
+### 📖 **Take a Moment to Read It**
+Please review our [**Code of Conduct**](CODE_OF_CONDUCT.md) before contributing, so we can all create a space where everyone feels comfortable and valued. 🙏
+
+Together, let's keep **TimeJump** a great place for everyone to enjoy, learn, and grow! 🌟
+
 
 ---
 ## 🗂️ Project Structure
