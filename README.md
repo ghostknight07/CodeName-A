@@ -31,7 +31,8 @@ For more details, please refer to the [LICENSE](LICENSE) file. 🚀
 ---
 
 ## ✨ Introduction
-**TimeJump** is a dynamic and user-friendly movie site built with **React**, **React Router**, and **Vite**. It offers users a seamless experience to browse different pages, including:
+**TimeJump** is a free-to-use website where people can watch movies and share their thoughts with the community. Explore films, write reviews, and join the conversation and seamless experience to browse different pages, including:
+
 - 🏠 **Home Page**
 - 🎞️ **Movie Page**
 - 📝 **Blog Page**
