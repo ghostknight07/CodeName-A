@@ -1,5 +1,45 @@
+/* MoviePage.css */
+
+/* Container for grid layout */
 .poster-grid {
-  margin-top: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Responsive grid */
+  gap: 16px;
+  padding: 16px;
   justify-content: center;
+  /* Center the grid horizontally */
+  align-items: start;
+  /* Align grid items from the top */
+}
+
+/* Individual poster container */
+.movie-poster {
+  display: grid;
+  /* Use grid to center poster inside */
+  place-items: center;
+  /* Optional: background color */
+  border-radius: 8px;
+
+
+  aspect-ratio: 2 / 3;
+  /* 2:3 aspect ratio for movie posters */
+  overflow: hidden;
+  /* Ensures any overflow is hidden, maintaining clean aspect ratio */
+  width: 100%;
+  /* Make sure it fills the container width */
+  max-width: 300px;
+  /* Optional: maximum width for posters */
+}
+
+/* Poster image should fill the container while keeping aspect ratio */
+.movie-poster img {
+  object-fit: cover;
+  /* Ensure the image covers the container, without distortion */
+  width: 100%;
+  /* Make sure the image stretches to fill the container */
+  height: 100%;
+  /* Make sure the image stretches to fill the container */
+  border-radius: 4px;
+  /* Optional: rounded corners on image */
 }

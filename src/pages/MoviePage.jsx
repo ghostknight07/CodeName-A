@@ -17,18 +17,19 @@ function MoviePage() {
   };
 
   return (
-    <main>
+    <main className="moviePage-main">
 
       <Navbar />
 
       <div className="poster-grid">
         {/* this snippet will take movie data from 'movieData.js' and put it on the page */}
         {movieData.slice(0, visibleCount).map((movie, index) => (
-          <MoviePoster
-            key={index}
-            posterUrl={movie.posterUrl}
-            movieName={movie.movieName}
-          />
+          <div className="movie-poster" key={index}>
+            <MoviePoster
+              posterUrl={movie.posterUrl}
+              movieName={movie.movieName}
+            />
+          </div>
         ))}
       </div>
 

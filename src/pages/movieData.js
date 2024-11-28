@@ -15,7 +15,7 @@ const movieData = [
     }, {
         id: 3,
         movieName: "The Batman",
-        posterUrl: "https://img.posterstore.com/zoom/wb0039-8batman-redrain50x70_colorcorrectedonlyforweb.jpg",
+        posterUrl: "https://resizing.flixster.com/YDdRgWm1dsAAffl-U99wOf9v6fQ=/206x305/v2/https://resizing.flixster.com/HUwAlW1QAya1vlIePUDv3kdzhIE=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc1OGFlMDI0LTE1ZTEtNDE4ZS04Y2RmLWNjYzcyOWQyZmMyNi5qcGc=",
     }, {
         id: 4,
         movieName: "Interstellar",
