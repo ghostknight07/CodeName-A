@@ -7,7 +7,7 @@
   /* Responsive grid */
   gap: 16px;
   padding: 16px;
-  justify-content: center;
+  justify-items: center;
   /* Center the grid horizontally */
   align-items: start;
   /* Align grid items from the top */
@@ -59,4 +59,8 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.show-more-btn:hover {
+  background-color: #ffffffe3;
 }

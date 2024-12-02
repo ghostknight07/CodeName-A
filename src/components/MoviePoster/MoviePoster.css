@@ -2,7 +2,7 @@
 .movie-poster {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     /* Make it responsive */
     text-align: center;
     position: relative;
@@ -37,7 +37,13 @@
     object-fit: cover;
     /* Ensures image covers the area without distorting */
     border-radius: 10px;
+    transition: filter 0.3s ease;
 }
+
+#movie-poster-img:hover img {
+    filter: blur(1px);
+}
+
 
 /* Hover effect for the image container */
 #movie-poster-img::before {

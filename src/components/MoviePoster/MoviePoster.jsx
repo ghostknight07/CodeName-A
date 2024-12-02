@@ -1,3 +1,5 @@
+// i guess we need a proper rework on for the css of the poster
+
 import 'boxicons/css/boxicons.min.css';
 import './MoviePoster.css';
 import PropTypes from "prop-types";
