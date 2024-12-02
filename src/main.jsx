@@ -7,7 +7,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // App.jsx is homepage
 import App from './App.jsx'
-import MoviePage from './pages/MoviePage.jsx';
+import MoviePage from './pages/MoviePage/MoviePage.jsx';
 import RequestPage from './pages/RequestPage.jsx';
 import BlogPage from './pages/BlogPage.jsx';
 

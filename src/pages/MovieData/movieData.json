@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "movieName": "The Wild Robot",
+        "posterUrl": "https://resizing.flixster.com/H_01DJwgqQtq3M9GLavrM9_FL3g=/206x305/v2/https://resizing.flixster.com/c7fcjCvkHP4wiDlEdVRusMXCOws=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzAzOWI1YzkwLTNiODAtNDNmYy05MTA1LTViZjg4ZTgyYTc1MC5qcGc="
+    },
+    {
+        "id": 2,
+        "movieName": "Deadpool & The Wolverine",
+        "posterUrl": "https://cdn.marvel.com/content/1x/deadpoolandwolverine_lob_crd_03.jpg"
+    },
+    {
+        "id": 3,
+        "movieName": "The Batman",
+        "posterUrl": "https://resizing.flixster.com/YDdRgWm1dsAAffl-U99wOf9v6fQ=/206x305/v2/https://resizing.flixster.com/HUwAlW1QAya1vlIePUDv3kdzhIE=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc1OGFlMDI0LTE1ZTEtNDE4ZS04Y2RmLWNjYzcyOWQyZmMyNi5qcGc="
+    },
+    {
+        "id": 4,
+        "movieName": "Interstellar",
+        "posterUrl": "https://i.ebayimg.com/images/g/IyMAAOSwmUdUWTIG/s-l960.webp"
+    },
+    {
+        "id": 5,
+        "movieName": "Avengers Endgame",
+        "posterUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"
+    },
+    {
+        "id": 6,
+        "movieName": "The Garfield Movie",
+        "posterUrl": "https://resizing.flixster.com/8830tX2h1RGoUyDnA8n7Fhzf8RA=/206x305/v2/https://resizing.flixster.com/3pA6HOoDAL6ZYKPrt_hkiVf2L4c=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U0MDAxOGI2LTViZTEtNGU4Yy04NTlmLWE0ZTc4Yzg3ZDBlMy5qcGc="
+    },
+    {
+        "id": 7,
+        "movieName": "Blade Runner 2049",
+        "posterUrl": "https://resizing.flixster.com/e0yEXMKWcKU8_JJ4i3vu45poKbI=/206x305/v2/https://resizing.flixster.com/73VCeyfsM8UDQ0o7IjUIcXr7jd8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RlNzI0MGQyLTQ2ZTktNGMyYi05N2VmLTFjMDhiY2VlMDQ2Ni53ZWJw"
+    },
+    {
+        "id": 8,
+        "movieName": "The Gray Man",
+        "posterUrl": "https://resizing.flixster.com/IQDjTaUIWqz55cgLRkAMV2mWhB8=/206x305/v2/https://resizing.flixster.com/nF81IFSnU_GuxV1dr4JvtWlESbA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzMxMWU5OTM4LWVkODctNDAyNC04OGE1LTg2ZjJiZTgxY2U2OS5qcGc="
+    },
+    {
+        "id": 9,
+        "movieName": "The Lion King",
+        "posterUrl": "https://resizing.flixster.com/iDbOnHtqoGYpDIEv6upqqVUXdnM=/206x305/v2/https://resizing.flixster.com/HJVz2wWgoDtfWDvX6DT2-bVwFUM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzYyYWU2MmIwLTE3NDMtNDJlZi04MzQ1LTViNjVjMzA3YTlkMi53ZWJw"
+    },
+    {
+        "id": 10,
+        "movieName": "The Adam Project",
+        "posterUrl": "https://resizing.flixster.com/QUa95iKumIJUuhFZx6cb5xYKQD8=/206x305/v2/https://resizing.flixster.com/IHo_T0U-Ml6Hze4m5mjhQOuSlxk=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ1ZGViNThlLTcxNDQtNDM3Ny05NzI5LTA5OGM0OGJiNWQ1NS5qcGc="
+    },
+    {
+        "id": 11,
+        "movieName": "IF",
+        "posterUrl": "https://resizing.flixster.com/ZeS2f5s9kdAXXPzCWfeA5TEKJZA=/206x305/v2/https://resizing.flixster.com/LjP_YBdwVIehvFE04lJgajPtOoc=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU5M2FmN2I4LTBjYTQtNDI2NS05MTJkLTg4MWZiOGI2MDRhNi5qcGc="
+    }
+]
