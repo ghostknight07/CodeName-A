@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // App.jsx is homepage
 import App from './App.jsx'
 import MoviePage from './pages/MoviePage/MoviePage.jsx';
+import MovieDetails from './pages/MovieDetails/MovieDetails.jsx';
 import RequestPage from './pages/RequestPage.jsx';
 import BlogPage from './pages/BlogPage.jsx';
 
@@ -26,6 +27,12 @@ const router = createBrowserRouter([
     element: <MoviePage />,
     errorElement: <NotFound />,
   },
+  {
+    path: "/movies/:id",
+    element: <MovieDetails />,
+    errorElement: <NotFound />,
+  },
+
   {
     path: '/blog',
     element: <BlogPage />,

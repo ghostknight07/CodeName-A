@@ -1,3 +1,4 @@
+import { Link  } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar.jsx";
 import MoviePoster from "../../components/MoviePoster/MoviePoster.jsx";
@@ -22,12 +23,18 @@ function MoviePage() {
       <div className="poster-grid">
         {/* this snippet will take movie data from 'movieData.js' and put it on the page */}
         {movieData.slice(0, visibleCount).map((movie, index) => (
-          <div className="movie-poster" key={index}>
-            <MoviePoster
-              posterUrl={movie.posterUrl}
-              movieName={movie.movieName}
+        
+          <Link
+            to={`/movies/${movie.id}`} // movie's unique id routing
+            key={index}
+            state={ movie  } //pass movie data using react states
+          >
+            <MoviePoster 
+              posterUrl = { movie.posterUrl }
+              movieName = { movie.movieName }
             />
-          </div>
+          </Link>
+
         ))}
       </div>
 
