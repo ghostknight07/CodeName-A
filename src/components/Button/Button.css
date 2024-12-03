@@ -1,0 +1,14 @@
+#button-component {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button-component:hover {
+    background-color: #ffffffe3;
+}

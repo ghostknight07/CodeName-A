@@ -1,10 +1,9 @@
-import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
+import Button from "../../components/Button/Button.jsx";
 
 function MovieDetails() {
   const location = useLocation();
   const movie = location.state; // Access the movie data passed via state
-  const navigate = useNavigate();
 
   if (!movie) {
     return <p>No movie selected!</p>; // Fallback if no data is available
@@ -12,17 +11,34 @@ function MovieDetails() {
 
   return (
     <main className="movie-details">
-      <button onClick={() => navigate(-1)} className="back-button">Go Back</button>
+      {/* Back to Home Button */}
+      <nav>
+        <Link to="/movies">
+          <Button text="Back To Home" />
+        </Link>
+      </nav>
 
+      {/* Movie Content */}
       <div className="movie-details-content">
-        <img src={movie.posterUrl} alt={movie.movieName} className="movie-image" />
+        <img
+          src={movie.posterUrl}
+          alt={movie.movieName}
+          className="movie-image"
+        />
         <h1>{movie.movieName}</h1>
         <p>{movie.description}</p>
-        <button className="watch-button">Watch Movie</button>
+
+        {/* External Link to Google */}
+        <a
+          href="https://google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button text="Watch Now" />
+        </a>
       </div>
     </main>
   );
 }
 
 export default MovieDetails;
-
