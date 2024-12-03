@@ -2,8 +2,7 @@ import { useLocation, Link } from "react-router-dom";
 import Button from "../../components/Button/Button.jsx";
 
 function MovieDetails() {
-  const location = useLocation();
-  const movie = location.state; // Access the movie data passed via state
+  const movie = useLocation().state; // Access the movie data passed via state
 
   if (!movie) {
     return <p>No movie selected!</p>; // Fallback if no data is available
