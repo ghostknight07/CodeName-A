@@ -5,6 +5,11 @@
         "posterUrl": "https://resizing.flixster.com/H_01DJwgqQtq3M9GLavrM9_FL3g=/206x305/v2/https://resizing.flixster.com/c7fcjCvkHP4wiDlEdVRusMXCOws=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzAzOWI1YzkwLTNiODAtNDNmYy05MTA1LTViZjg4ZTgyYTc1MC5qcGc="
     },
     {
+        "id": 2,
+        "movieName": "Klaus",
+        "posterUrl": "https://resizing.flixster.com/ojQkDK4z0j5c8SC-bcLrwdtd34U=/206x305/v2/https://resizing.flixster.com/cmnfD_LwqvfnPjF17hdOTN2CRfA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2ZkYmI5YmNhLTNhNDctNDA2Zi1hZTQwLWJiZTU2YWY5N2EwOC53ZWJw"
+    },
+    {
         "id": 3,
         "movieName": "The Batman",
         "posterUrl": "https://resizing.flixster.com/YDdRgWm1dsAAffl-U99wOf9v6fQ=/206x305/v2/https://resizing.flixster.com/HUwAlW1QAya1vlIePUDv3kdzhIE=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc1OGFlMDI0LTE1ZTEtNDE4ZS04Y2RmLWNjYzcyOWQyZmMyNi5qcGc="
@@ -50,3 +55,4 @@
         "posterUrl": "https://resizing.flixster.com/ZeS2f5s9kdAXXPzCWfeA5TEKJZA=/206x305/v2/https://resizing.flixster.com/LjP_YBdwVIehvFE04lJgajPtOoc=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU5M2FmN2I4LTBjYTQtNDI2NS05MTJkLTg4MWZiOGI2MDRhNi5qcGc="
     }
 ]
+

@@ -28,7 +28,6 @@
     margin-bottom: 5px;
     box-sizing: border-box;
     border-radius: 0px !important;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
 }
 
 /* Movie poster image */
@@ -39,6 +38,9 @@
     /* Ensures image covers the area without distorting */
     transition: filter 0.3s ease;
     border-radius: 0px !important;
+    -webkit-box-shadow: 0px 1px 24px 11px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 1px 24px 11px rgba(0,0,0,0.14);
+    box-shadow: 0px 1px 24px 11px rgba(0,0,0,0.14);
 }
 
 #movie-poster-img:hover img {
