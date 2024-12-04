@@ -5,7 +5,9 @@ export default function Navbar() {
   return (
     <header className="nav-header">
       <div>
-        <h1 className='logo'><img className='logo-nav' src={Logo} alt={Logo} /></h1>
+        <a href="/">
+          <h1 className='logo'><img className='logo-nav' src={Logo} alt={Logo} /></h1>
+        </a>
       </div>
       <div className='nav-links'>
         <a href="/">Home</a>
