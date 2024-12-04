@@ -8,10 +8,10 @@
     position: relative;
     cursor: pointer;
     min-width: 140px;
-    aspect-ratio: 2 / 3;
     /* Enforce 2:3 aspect ratio for the poster container */
     margin-top: 10px;
     margin-bottom: 20px;
+    border-radius: 0px !important;
 }
 
 /* Image container */
@@ -20,14 +20,15 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 210px;
     /* Make it responsive */
-    height: 100%;
+    height: 293px;
     /* Make sure it takes the full container height */
     overflow: hidden;
     margin-bottom: 5px;
-    border-radius: 10px;
     box-sizing: border-box;
+    border-radius: 0px !important;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
 }
 
 /* Movie poster image */
@@ -36,8 +37,8 @@
     height: 100%;
     object-fit: cover;
     /* Ensures image covers the area without distorting */
-    border-radius: 10px;
     transition: filter 0.3s ease;
+    border-radius: 0px !important;
 }
 
 #movie-poster-img:hover img {
@@ -56,7 +57,6 @@
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
     z-index: 1;
-    border-radius: 10px;
 }
 
 #movie-poster-img:hover::before {

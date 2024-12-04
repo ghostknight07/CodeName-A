@@ -1,13 +1,11 @@
 // implement the button component
 
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, } from "react-router-dom";
 import movieData from "../MovieData/movieData.js"; // Import your movie data
-
 
 function MovieDetails() {
   const { id } = useParams(); // Get the movie ID from the URL
-  const navigate = useNavigate();
 
   // Find the movie based on the ID
   const movie = movieData.find((movie) => movie.id.toString() === id);
@@ -18,9 +16,11 @@ function MovieDetails() {
 
   return (
     <main className="movie-details">
-      <button onClick={() => navigate(-1)} className="back-button">
+      <a href="/movies">
+      <button className="back-button">
         Go Back
       </button>
+      </a>
 
       <div className="movie-details-content">
         <img src={movie.posterUrl} alt={movie.movieName} className="movie-image" />
