@@ -2,7 +2,7 @@
 // installed boxicons in npm
 
 import './App.css'
-import Navbar from './components/Navbar/Navbar.jsx';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (

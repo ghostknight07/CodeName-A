@@ -1,7 +1,7 @@
 import { Link  } from "react-router-dom";
 import { useState } from "react";
-import Navbar from "../../components/Navbar/Navbar.jsx";
-import MoviePoster from "../../components/MoviePoster/MoviePoster.jsx";
+import Navbar from "../../components/Navbar/Navbar";
+import MoviePoster from "../../components/MoviePoster/MoviePoster";
 //movieData.js is the files were we will put out movie info
 import movieData from "../MovieData/movieData.js";
 import "./MoviePage.css";
