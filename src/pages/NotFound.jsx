@@ -3,7 +3,7 @@
 import styles from './NotFound.module.css';
 import Button from '../components/Button/Button.jsx';
 
-export default function NotFound() {
+function NotFound() {
   return (
     <div className={styles['notfound']}>
       <div className={styles['not-found-content']}>
@@ -16,3 +16,5 @@ export default function NotFound() {
     </div>
   )
 }
+
+export default NotFound;

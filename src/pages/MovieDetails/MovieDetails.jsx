@@ -15,7 +15,7 @@ function MovieDetails() {
   }
 
   return (
-    <div className="movie-details">
+    <div className="movie-details"> 
       <div className='movie-details-container'>
         <a href='/movies'>
           <button id="button-component">go back</button>
