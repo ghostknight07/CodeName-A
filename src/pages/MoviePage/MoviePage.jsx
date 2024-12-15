@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import MoviePoster from "../../components/MoviePoster/MoviePoster";
 //movieData.js is the files were we will put out movie info
-import movieData from "../MovieData/movieData.js";
+import movieData from "../MovieData/movieData.json";
 import "./MoviePage.css";
 
 function MoviePage() {

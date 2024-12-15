@@ -2,7 +2,7 @@
 import './MovieDetails.css';
 
 import { useParams, } from "react-router-dom";
-import movieData from "../MovieData/movieData.js"; // Import your movie data
+import movieData from "../MovieData/movieData.json"; // Import your movie data
 
 function MovieDetails() {
   const { id } = useParams(); // Get the movie ID from the URL
