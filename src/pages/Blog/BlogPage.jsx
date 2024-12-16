@@ -10,11 +10,10 @@ function BlogPage() {
       <div className="blog-section">
         <div className="blogs pxy-10">
 
-          blogs here
           <Blog />
 
         </div>
-        <div className="staff-picks pxy-10">staff picks here</div>
+        <div className="populer-picks pxy-10">staff picks here</div>
       </div>
     </div>
   )

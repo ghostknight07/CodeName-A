@@ -10,7 +10,7 @@
 
 
 .blog-container {
-    width: 85%;
+    width: 95%;
     margin: auto auto;
     height: 100dvh;
 }
@@ -22,15 +22,28 @@
     height: 90dvh;
 }
 
-.blog-section .staff-picks {
+.blog-section .populer-picks {
     flex-grow: 1;
 }
 
 .blogs {
     width: 70%;
+    text-align: left;
+    margin: 0 0;
 }
 
-.staff-picks {
+.populer-picks {
     border-left: 1px solid var(--native-dark-border-color);
     padding-left: 10px;
+}
+
+
+@media screen and (max-width: 680px) {
+    .populer-picks {
+        display: none;
+    }
+
+    .blogs {
+        width: 100%;
+    }
 }

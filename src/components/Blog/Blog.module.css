@@ -1,0 +1,38 @@
+.blogContainer {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.blogTypeContainer {
+    background-color: rgb(28, 110, 204);
+    width: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.blogType {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.blogTitle {
+    font-size: 21px;
+}
+
+.blogDescription {
+    font-size: 13px;
+}
+
+.blogInfo {
+    padding: 20px;
+}
+
+.blogImage img {
+    width: 320px;
+    height: 220px;
+}
