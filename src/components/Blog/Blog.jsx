@@ -1,4 +1,7 @@
+// the props should be blogType, blogTitle, blogDescription, author, date
+
 import styles from './Blog.module.css';
+import { FaClock } from "react-icons/fa";
 
 function Blog() {
     return (
@@ -21,6 +24,14 @@ function Blog() {
 
                 <p className={styles.blogDescription} id="blogDescription">Few action thrillers manage to balance high-stakes tension with genuine character development, but Jaume Collet-Serra‘s Carry-On delivers on both fronts. From its opening moments, the narrative ...
                 </p>
+
+                <div className={styles.extraInformation}>
+                    <div><p className={styles.author}>author name</p></div>
+                    <div className={styles.dateContainer}>
+                        <FaClock />
+                        <p className={styles.date}>post date</p>
+                    </div>
+                </div>
             </div>
         </div >
     )

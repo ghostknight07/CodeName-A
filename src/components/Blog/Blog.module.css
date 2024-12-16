@@ -2,6 +2,8 @@
     text-align: left;
     display: flex;
     justify-content: center;
+    background-color: black;
+    margin-right: 20px;
 }
 
 .blogTypeContainer {
@@ -16,7 +18,7 @@
 }
 
 .blogType {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 14px;
 }
 
@@ -34,5 +36,28 @@
 
 .blogImage img {
     width: 320px;
-    height: 220px;
+    height: 100%;
+}
+
+
+.extraInformation {
+    margin-top: 15px;
+    display: flex;
+    gap: 50px;
+}
+
+.extraInformation p {
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.dateContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.date {
+    color: #aaaaaa;
 }

@@ -1,8 +1,8 @@
 // i guess we need a proper rework on for the css of the poster
 
-import 'boxicons/css/boxicons.min.css';
 import './MoviePoster.css';
 import PropTypes from "prop-types";
+import { FaPlay } from "react-icons/fa";
 
 export default function MoviePoster(props) {
   return (
@@ -14,7 +14,8 @@ export default function MoviePoster(props) {
 
         <p className='play-text'>
           {/* Icon with boxicons */}
-          <i className='bx bx-lg bx-play'></i>
+          <FaPlay />
+          {/*<i className='bx bx-lg bx-play'></i>*/}
         </p>
       </div>
 
