@@ -1,37 +1,41 @@
-- src
-  - components
-    - Button
+- src/
+  - components/
+    - Button/
       - Button.jsx
       - Button.css
-    - MoviePoster
+    - MoviePoster/
       - MoviePoster.jsx
       - MoviePoster.css
-    - Navbar
+    - Navbar/
       - Navbar.jsx
       - Navbar.css
-    - logo
+    - logo/
       - logo.svg
-  - MovieData
+  
+  - MovieData/
     - movieData.json
-  - pages
-    - MovieDetails
+  
+  - pages/
+    - MovieDetails/
       - MovieDetails.jsx
       - MovieDetails.css
-    - MoviePage
+    - MoviePage/
       - MoviePage.jsx
       - MoviePage.css
-    - Blog
+    - Blog/
       - BlogPage.jsx
       - BlogPage.css
       - Blog.jsx
       - Blog.module.css
-    - NotFound
+    - NotFound/
       - NotFound.jsx
       - NotFound.module.css
-    - RequestPage
+    - RequestPage/
       - RequestPage.jsx
+  
   - App.jsx
   - App.css
   - vite.config.js
   - eslint.config.js
+
 - package.json
