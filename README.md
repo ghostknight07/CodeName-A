@@ -109,7 +109,7 @@ The project relies on these key packages:
 - ⚡ **`vite`**: Lightning-fast development server and build tool.
 - 🔌 **`@vitejs/plugin-react`**: Plugin for React integration in Vite.
 - ✅ **`prop-types`**: Type-checking for component props.
-- 🛠️ **`boxicons`**: Icon library for clean and modern UI.
+- 🛠️ **`react-icons`**: Icon library for clean and modern UI.
 
 > 💡 **Note:** This list highlights the primary dependencies and is not exhaustive.
 
