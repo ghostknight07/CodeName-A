@@ -1,14 +1,13 @@
 .blogContainer {
     text-align: left;
     display: flex;
-    justify-content: center;
     background-color: black;
     margin-right: 20px;
 }
 
 .blogTypeContainer {
     background-color: rgb(28, 110, 204);
-    width: 80px;
+    width: 100px;
     text-align: center;
     margin-bottom: 10px;
     padding-top: 2px;

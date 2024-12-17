@@ -2,8 +2,9 @@
 
 import styles from './Blog.module.css';
 import { FaClock } from "react-icons/fa";
+import PropTypes from 'prop-types'
 
-function Blog() {
+export default function Blog(props) {
     return (
         <div className={styles.blogContainer} id="blog">
             <div className={styles.blogImage}>
@@ -16,20 +17,21 @@ function Blog() {
             </div>
             <div className={styles.blogInfo}>
                 <div className={styles.blogTypeContainer}>
-                    <h3 className={styles.blogType}>BlogReview</h3>
+                    <h3 className={styles.blogType}>{props.blogType}</h3>
                 </div>
 
-                <a href="#"><h2 className={styles.blogTitle}>Kraven The Hunter Review: A Toothless Roar</h2></a>
+                <a href="#"><h2 className={styles.blogTitle}>{props.blogTitle}</h2></a>
                 <br />
 
-                <p className={styles.blogDescription} id="blogDescription">Few action thrillers manage to balance high-stakes tension with genuine character development, but Jaume Collet-Serra‘s Carry-On delivers on both fronts. From its opening moments, the narrative ...
+                <p className={styles.blogDescription} id="blogDescription">
+                {props.blogDescription}
                 </p>
 
                 <div className={styles.extraInformation}>
-                    <div><p className={styles.author}>author name</p></div>
+                    <div><p className={styles.author}>{props.authorName}</p></div>
                     <div className={styles.dateContainer}>
                         <FaClock />
-                        <p className={styles.date}>post date</p>
+                        <p className={styles.date}>{props.pubDate}</p>
                     </div>
                 </div>
             </div>
@@ -37,4 +39,20 @@ function Blog() {
     )
 }
 
-export default Blog
+// json file must contain an "id" field
+// needs to handle blog image props
+Blog.defaultProps = {
+  authorName: "Author Name",
+  blogType: "movie review",
+  blogTitle: "blog title",
+  blogDescription: "blog description",
+  pubDate: "pub date",
+};
+
+Blog.propTypes = {
+  blogType: PropTypes.string.isRequired,
+  blogTitle: PropTypes.string.isRequired,
+  blogDescription: PropTypes.string.isRequired,
+  authorName: PropTypes.string,
+  pubDate: PropTypes.string.isRequired,
+};
