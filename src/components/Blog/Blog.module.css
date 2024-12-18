@@ -1,12 +1,20 @@
+:root {
+    --main-color-one: rgb(28, 110, 204);
+    --title-hover-color: skyblue;
+}
+
+
 .blogContainer {
     text-align: left;
     display: flex;
     background-color: black;
     margin-right: 20px;
+    margin-bottom: 20px;
+    min-height: 210px;
 }
 
 .blogTypeContainer {
-    background-color: rgb(28, 110, 204);
+    background-color: var(--main-color-one);
     width: 100px;
     text-align: center;
     margin-bottom: 10px;
@@ -19,10 +27,15 @@
 .blogType {
     font-weight: 600;
     font-size: 14px;
+    text-transform: capitalize;
 }
 
 .blogTitle {
     font-size: 21px;
+}
+
+.blogTitle:hover {
+    color: var(--title-hover-color);
 }
 
 .blogDescription {

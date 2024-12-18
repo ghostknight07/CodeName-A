@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "authorName": "Caillou Pettis",
+        "blogType": "movie reviews",
+        "blogTitle": "Small Things Like These Review: A Quietly Powerful Story",
+        "blogDescription": "Tim Mielants’ Small Things Like These, an adaptation of Claire Keegan’s acclaimed 2021 novel, is a restrained yet profoundly moving historical drama that unflinchingly ...",
+        "pubDate": " December 17, 2024",
+        "pick": true
+    },
+    {
+        "id": 2,
+        "authorName": "Caillou Pettis",
+        "blogType": "movie reviews",
+        "blogTitle": "Mufasa: The Lion King Review – The King Is Here",
+        "blogDescription": "Mufasa: The Lion King is a powerful prequel that explores family, legacy, and the emotional story behind Disney’s iconic king.",
+        "pubDate": " December 17, 2024",
+        "pick": false
+    }
+]
