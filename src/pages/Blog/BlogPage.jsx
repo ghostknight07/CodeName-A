@@ -1,7 +1,6 @@
 // to do
 // add a link method or whatever it is called to each blog(in the loop)
 // add a prop for the blog image
-
 import Navbar from "../../components/Navbar/Navbar.jsx";
 import Blog from "../../components/Blog/Blog.jsx";
 import { useState } from "react";
@@ -19,7 +18,6 @@ function BlogPage() {
     setVisibleCount((prevCount) => prevCount + 10);
   };
 
-
   return (
     <div className="blog-container">
       <Navbar />
@@ -28,11 +26,11 @@ function BlogPage() {
           {blogData.slice(0, visibleCount).map((blog, index) => (
             <Blog
               key={index}
-              state={blog}
               authorName={blog.authorName}
               blogTitle={blog.blogTitle}
               blogDescription={blog.blogDescription}
               pubDate={blog.pubDate}
+              blogImage={blog.blogImage}
             />
           ))}
 
@@ -51,3 +49,4 @@ function BlogPage() {
 }
 
 export default BlogPage;
+
