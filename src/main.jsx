@@ -1,5 +1,5 @@
 // warning:
-// no changing anything without a proper review 
+// no changing anything without a proper review ! 
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -19,6 +19,7 @@ import NotFound from './pages/NotFound.jsx';
 const router = createBrowserRouter([
   {
     path: '/', // this is the url pattern
+    // app component is the home page
     element: <App />,
   },
   {
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
   },
   {
-    path: '*', // path for any predefined url path
+    path: '*', // path for any undefined url path
     element: <NotFound />,
   }
 ]);
