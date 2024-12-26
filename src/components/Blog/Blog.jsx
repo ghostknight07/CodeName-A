@@ -8,7 +8,7 @@ export default function Blog({ authorName, blogTitle, blogDescription, pubDate, 
             <div className={styles.blogImage}>
                 {/* If no blogImage, display a placeholder image */}
                 <img
-                    src="https://resizing.flixster.com/pMNfRhpBmFbKV0o71XDVqcXeNmo=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p26812197_v_h9_ad.jpg" 
+                    src={blogImage} 
                     alt={blogTitle}
                 />
             </div>
