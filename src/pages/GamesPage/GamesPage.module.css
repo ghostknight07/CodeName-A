@@ -1,0 +1,21 @@
+/* Full Page Styling */
+.Gamesfull-page {
+    width: 95%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #00000000;
+  }
+  
+  /* Page Container Styling */
+  .Gamespage-container {
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+    background-color: #00000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  

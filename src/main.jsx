@@ -8,8 +8,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 import MoviePage from './pages/MoviePage/MoviePage.jsx';
 import MovieDetails from './pages/MovieDetails/MovieDetails.jsx';
-import RequestPage from './pages/RequestPage.jsx';
+import RequestPage from './pages/RequestPage/RequestPage.jsx';
 import BlogPage from './pages/Blog/BlogPage.jsx';
+import GamesPage from './pages/GamesPage/GamesPage.jsx';
 
 // in case of any error
 import NotFound from './pages/NotFound.jsx';
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
   {
     path: '/request',
     element: <RequestPage />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: '/games',
+    element: <GamesPage />,
     errorElement: <NotFound />,
   },
   {
