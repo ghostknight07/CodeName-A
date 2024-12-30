@@ -13,6 +13,7 @@ export default function Navbar() {
         <a href="/">Home</a>
         <a href="/movies">Movies</a>
         <a href="/blog">Blog</a>
+        <a href="/games">Games</a>
         <a href="/request">Request</a>
         {/* Don't think an about page is needed. */}
         {/* <a href="/about">About Us</a> */}

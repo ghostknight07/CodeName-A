@@ -9,10 +9,11 @@ import "./MoviePage.css";
 function MoviePage() {
   // this state will help us show like 10 movies and then a 
   // button will help us "show more"
-  const [visibleCount, setVisibleCount] = useState(10);
+  let howManyPostersShouldBeSeen = 12;
+  const [visibleCount, setVisibleCount] = useState(howManyPostersShouldBeSeen);
 
   const handleClick = () => {
-    setVisibleCount((prevCount) => prevCount + 10);
+    setVisibleCount((prevCount) => prevCount + howManyPostersShouldBeSeen);
   };
 
   return (
