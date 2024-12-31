@@ -3,6 +3,7 @@
 // add a prop for the blog image
 import Navbar from "../../components/Navbar/Navbar.jsx";
 import Blog from "../../components/Blog/Blog.jsx";
+import PopularBlog from "../../components/PopularBlog/PopularBlog.jsx";
 import { useState } from "react";
 
 // importing movie data json file
@@ -42,7 +43,9 @@ function BlogPage() {
             </div>
           )}
         </div>
-        <div className="populer-picks pxy-10">staff picks here</div>
+        <div className="populer-picks pxy-10">
+          <PopularBlog />
+        </div>
       </div>
     </div>
   )
