@@ -1,4 +1,11 @@
 /* Full Page Styling */
+.GameFullPage {
+  width: 95%;
+  margin: auto auto;
+  min-height: 100vh;
+  background-color: #00000000;
+}
+
 .GamesFullPage {
     width: 95%;
     margin: auto auto;
