@@ -28,6 +28,8 @@ function GamesPage() {
                 gameImage={game.gameImage}
                 gameDate={game.gameDate}
                 gameType={game.gameType}
+                gameGenres={game.gameGenres}
+                gameCracked={game.gameCracked}
               />
             ))}
           </div>
