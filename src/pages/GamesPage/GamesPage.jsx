@@ -14,30 +14,34 @@ function GamesPage() {
   const games = GameData.slice(0, visibleCount);
 
   return (
-    <div className={style.GameFullPage}>
-      <Navbar />
-      <div className={style.GamePageContainer}>
-        <div className={style.GameContainer}>
-          {games.map((game, index) => (
-            <Games
-              key={index}
-              gameName={game.gameName}
-              gameDescription={game.gameDescription}
-              gameImage={game.gameImage}
-              gameDate={game.gameDate}
-            />
-          ))}
-        </div>
-        <div className={style.PopularGames}>
-          <h1>he</h1>
-        </div>
-        {visibleCount < GameData.length && (
-          <div className={style.buttonContainer}>
-            <button className={style.showMoreBtn} onClick={handleClick}>
-              Show More
-            </button>
+    <div className={style.GamesPageMain}>
+      <img className={style.GamesPageBackground} src="https://wallpapercave.com/wp/wp2196807.jpg" />
+      <div className={style.GameFullPage}>
+        <Navbar />
+        <div className={style.GamePageContainer}>
+          <div className={style.GameContainer}>
+            {games.map((game, index) => (
+              <Games
+                key={index}
+                gameTitle={game.gameName}
+                gameDescription={game.gameDescription}
+                gameImage={game.gameImage}
+                gameDate={game.gameDate}
+                gameType={game.gameType}
+              />
+            ))}
           </div>
-        )}
+          <div className={style.PopularGames}>
+            <h1>Popular Games</h1>
+          </div>
+          {visibleCount < GameData.length && (
+            <div className={style.buttonContainer}>
+              <button className={style.showMoreBtn} onClick={handleClick}>
+                Show More
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

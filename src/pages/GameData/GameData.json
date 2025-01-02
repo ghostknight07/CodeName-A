@@ -1,9 +1,30 @@
 [
     {
+        "id": 3,
+        "gameName": "The Last of use",
+        "gameImage": "https://cdn.thegamesdb.net/images/thumb/boxart/front/109072-1.jpg",
+        "gameDescription" : "Description for Game 1",
+        "gameDate": "2023-01-01",
+        "gameType": "Adventure"
+    },
+    {
+        "id": 2,
+        "gameName": "Game 3",
+        "gameImage": "https://cdn.thegamesdb.net/images/thumb/boxart/front/128624-1.jpg",
+        "gameDescription": "Description for Game 3",
+        "gameDate": "2023-01-01",
+        "gameType": "Adventure"
+    },
+
+    {
         "id": 1,
-        "gameName": "The Wild Robot",
-        "gameImage": "https://i.ibb.co/0jV0bS0/robot.jpg",
-        "gameDescription": "The Wild Robot is a game where you play as a robot trying to escape from a maze.",
-        "gamedate": "2023-01-01"
+        "gameName": "Game 2",
+        "gameImage": "https://cdn.thegamesdb.net/images/thumb/boxart/front/128624-1.jpg",
+        "gameDescription": "Description for Game 2",
+        "gameDate": "2023-01-01",
+        "gameType": "Adventure"
     }
+
+    
+
 ]

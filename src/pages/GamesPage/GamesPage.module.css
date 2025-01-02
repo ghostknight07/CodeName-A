@@ -1,9 +1,19 @@
+
+.GamesPageBackground{
+  height: 100dvh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0.2;
+}
+
+
 /* Full Page Styling */
 .GameFullPage {
   width: 95%;
   margin: auto auto;
   min-height: 100vh;
-  background-color: #00000000;
 }
 
 .GamesFullPage {
@@ -21,6 +31,8 @@
 .GameContainer{
   width: 75%;
   margin-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .PopularGames{
