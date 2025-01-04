@@ -5,7 +5,7 @@
 }
 
 .popularBlogContainer{
-    height: 160px;
+    height: 100px;
     width: 100%;
     background-color: var(--container);
     display: flex;
