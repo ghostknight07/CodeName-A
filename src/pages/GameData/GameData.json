@@ -1,9 +1,53 @@
 [
     {
+        "id": 4,
+        "gameName": "Assassin's Creed II",
+        "gameImage": "https://cdn.thegamesdb.net/images/thumb/boxart/front/130388-1.jpg",
+        "gameDescription": "Delve deeper into the secret society of assassins with the sequel to the blockbuster action-adventure game. Assassin's Creed 2 is an epic story of family, vengeance and conspiracy set in the pristine, yet brutal, backdrop of a Renaissance Italy. Ezio befriends ...",
+        "gameDate": "2009-11-20",
+        "gameType": "PC",
+        "gameGenres": "Genre(s)  : Action | Adventure | Stealth",
+        "gameCracked": "Fitgirl",
+        "isPopular": false
+    },
+
+
+    {
+        "id": 3,
+        "gameName": "The Last of use",
+        "gameImage": "https://cdn.thegamesdb.net/images/thumb/boxart/front/109072-1.jpg",
+        "gameDescription" : "Discover the award-winning game that inspired the critically acclaimed television show. Guide Joel and Ellie through a post-apocalyptic America, and encounter unforgettable allies and enemies in The Last of Us™",
+        "gameDate": "2023-01-01",
+        "gameType": "PC",
+        "gameGenres": "Genre(s): Action | Adventure | Virtual Console",
+        "gameCracked": "Fitgirl",
+        "isPopular": true
+    },
+    {
+        "id": 2,
+        "gameName": "Black Myth: Wukong",
+        "gameImage": "https://cdn.thegamesdb.net/images/thumb/boxart/front/128624-1.jpg",
+        "gameDescription": "Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past....",
+        "gameDate": "Aug 20, 2024",
+        "gameType": "PC",
+        "gameGenres": "Genre(s): Action | Adventure | RPG",
+        "gameCracked": "Fitgirl",
+        "isPopular": true
+        
+    },
+
+    {
         "id": 1,
-        "gameName": "The Wild Robot",
-        "gameImage": "https://i.ibb.co/0jV0bS0/robot.jpg",
-        "gameDescription": "The Wild Robot is a game where you play as a robot trying to escape from a maze.",
-        "gamedate": "2023-01-01"
+        "gameName": "God of War",
+        "gameImage": "https://cdn.thegamesdb.net/images/thumb/boxart/front/96733-1.jpg",
+        "gameDescription": "A difficult and unfamiliar road awaits as you explore a stunning retelling of a classic story. Join Kratos as he adventures through a deep and reflective journey of growth, violence and the desire to become a better man for the sake of his son....",
+        "gameDate": "2022-01-14",
+        "gameType": "PC",
+        "gameGenres": "Genre(s): Action | Adventure | RPG",
+        "gameCracked": "Fitgirl",
+        "isPopular": true
     }
+
+    
+
 ]

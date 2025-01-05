@@ -1,14 +1,12 @@
-import style from "./GameBox.module.css";
+import style from "./PopularGames.module.css";
 import { FaClock } from "react-icons/fa";
 import PropTypes from "prop-types";
 
 export default function Game({
   gameTitle,
-  gameDescription,
   gameImage,
   gameDate,
   gameType,
-  gameGenres,
   gameCracked,
 }) {
   return (
@@ -27,21 +25,13 @@ export default function Game({
         <a href="#">
           <h2 className={style.gameTitle}>{gameTitle}</h2>
         </a>
-        <br />
-
-        <a href="#">
-          <p className={style.gameDescription}>{gameDescription}</p>
-        </a>
-        <br />
-        <a href="#">
-          <p className={style.gameGenres}>{gameGenres}</p>
-        </a>
-        <div className={style.gameDateContainer}>{/* for position icon and date */}
-          <div>
+        <div>
             <p className={style.gameCracked}>{gameCracked}</p>
           </div>
-          <FaClock />
-          <p className={style.gameDate}>{gameDate}</p>
+        <br />
+        <div className={style.gameDateContainer}>{/* for position icon and date */}
+          <FaClock /> <p className={style.gameDate}>{gameDate}</p>
+          
         </div>
       </div>
     </div>
@@ -50,20 +40,19 @@ export default function Game({
 
 Game.defaultProps = {
   gameTitle: "Game Title",
-  gameDescription: "Game Description",
+  
   gameImage: "default-image-path.jpg",
   gameDate: "Game Date",
   gameType: "Game Type",
-  gameGenres: "Game Genres",
+ 
   gameCracked: "Game Cracked",
 };
 
 Game.propTypes = {
   gameTitle: PropTypes.string.isRequired,
-  gameDescription: PropTypes.string.isRequired,
+  
   gameImage: PropTypes.string.isRequired,
   gameDate: PropTypes.string.isRequired,
   gameType: PropTypes.string.isRequired,
-  gameGenres: PropTypes.string.isRequired,
   gameCracked: PropTypes.string.isRequired,
 };
