@@ -5,6 +5,7 @@
 }
 
 .popularBlogContainer{
+    margin-bottom: 10px;
     height: 100px;
     width: 100%;
     background-color: var(--container);
@@ -16,6 +17,7 @@
 }
 
 .imgDiv img{
+    width: 133px;
     height: 100%;
 }
 

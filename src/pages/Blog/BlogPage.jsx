@@ -9,10 +9,9 @@ import { useState } from "react";
 // importing movie data json file
 import blogData from '../BlogData/BlogData.json';
 
-import './BlogPage.css'
+import './BlogPage.css';
 
 function BlogPage() {
-
   const [visibleCount, setVisibleCount] = useState(10);
 
   const handleClick = () => {
@@ -44,11 +43,21 @@ function BlogPage() {
           )}
         </div>
         <div className="populer-picks pxy-10">
-          <PopularBlog />
+          {/* only show the component if ifPopular is true */}
+          {blogData.slice(0, visibleCount).map((blog, index) =>
+            blog.isPopular && (
+              <PopularBlog
+                key={index}
+                blogTitle={blog.blogTitle}
+                blogImage={blog.blogImage}
+                authorName={blog.authorName}
+              />
+            )
+          )}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default BlogPage;

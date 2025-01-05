@@ -38,6 +38,7 @@ export default function Game({
   );
 }
 
+// default props is outdated. Must be changed to javascript default functions
 Game.defaultProps = {
   gameTitle: "Game Title",
   

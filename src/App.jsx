@@ -1,6 +1,4 @@
 // shall work as home page
-// installed boxicons in npm
-
 import './App.css'
 import Navbar from './components/Navbar/Navbar';
 
