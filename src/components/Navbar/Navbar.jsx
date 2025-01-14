@@ -1,12 +1,11 @@
 import './Navbar.css';
-import Logo from '../logo/logo.svg'
 
 export default function Navbar() {
   return (
     <header className="nav-header">
       <div>
         <a href="/">
-          <h1 className='logo'><img className='logo-nav' src={Logo} alt={Logo} /></h1>
+            <h1>CodeName A</h1>
         </a>
       </div>
       <div className='nav-links'>
