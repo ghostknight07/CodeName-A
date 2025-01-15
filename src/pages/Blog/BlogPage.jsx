@@ -19,45 +19,50 @@ function BlogPage() {
   };
 
   return (
-    <div className="blog-container">
-      <Navbar />
-      <div className="blog-section">
-        <div className="blogs pxy-10">
-          {blogData.slice(0, visibleCount).map((blog, index) => (
-            <Blog
-              key={index}
-              authorName={blog.authorName}
-              blogTitle={blog.blogTitle}
-              blogDescription={blog.blogDescription}
-              pubDate={blog.pubDate}
-              blogImage={blog.blogImage}
-            />
-          ))}
+    <div className="blogPage-Main">
+      
+      <div className="blogFullPage">
+        <Navbar />
 
-          {visibleCount < blogData.length && (
-            <div className="button-container">
+      <div className="blogSection-container">
+
+          <div className="NormalblogSection-container">
+           {blogData.slice(0, visibleCount).map((blog, index) => (
+             <Blog
+               key={index}
+               authorName={blog.authorName}
+               blogTitle={blog.blogTitle}
+               blogDescription={blog.blogDescription}
+               pubDate={blog.pubDate}
+               blogImage={blog.blogImage}
+             />
+           ))}
+
+           {visibleCount < blogData.length && (
+             <div className="button-container">
               <button className="show-more-btn" onClick={handleClick}>
-                Show More
-              </button>
-            </div>
-          )}
-        </div>
-        <div className="populer-picks pxy-10">
-          {/* only show the component if ifPopular is true */}
-          {blogData.slice(0, visibleCount).map((blog, index) =>
-            blog.isPopular && (
-              <PopularBlog
-                key={index}
-                blogTitle={blog.blogTitle}
-                blogImage={blog.blogImage}
-                authorName={blog.authorName}
-              />
-            )
-          )}
-        </div>
-      </div>
-    </div>
-  );
+                 Show More
+               </button>
+             </div>
+           )}
+         </div>
+          <div className="populerSection-container">
+           {/* only show the component if ifPopular is true */}
+           {blogData.slice(0, visibleCount).map((blog, index) =>
+             blog.isPopular && (
+               <PopularBlog
+                 key={index}
+                 blogTitle={blog.blogTitle}
+                 blogImage={blog.blogImage}
+                 authorName={blog.authorName}
+               />
+             )
+           )}
+         </div>
+         </div>
+       </div>
+     </div>
+ );
 }
 
 export default BlogPage;

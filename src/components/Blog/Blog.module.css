@@ -1,20 +1,27 @@
 :root {
     --main-color-one: rgb(28, 110, 204);
     --title-hover-color: skyblue;
-}
-
-
-.blogContainer {
+    --hover-transition-duration: 0.3s;
+    --hover-scale: 1.05;
+  }
+  
+  .blogContainer {
     text-align: left;
     display: flex;
     background-color: black;
-    margin-right: 20px;
+    margin-right: 20px; 
     margin-bottom: 20px;
     height: 243px;
     min-height: 210px;
-}
-
-.blogTypeContainer {
+    transition: transform var(--hover-transition-duration);
+  }
+  
+  .blogContainer:hover {
+    transform: scale(var(--hover-scale));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .blogTypeContainer {
     background-color: var(--main-color-one);
     width: 100px;
     text-align: center;
@@ -23,54 +30,63 @@
     padding-bottom: 2px;
     padding-left: 5px;
     padding-right: 5px;
-}
-
-.blogType {
+  }
+  
+  .blogType {
     font-weight: 600;
     font-size: 14px;
     text-transform: capitalize;
-}
-
-.blogTitle {
+  }
+  
+  .blogTitle {
     font-size: 20px;
-}
-
-.blogTitle:hover {
+    transition: color var(--hover-transition-duration);
+  }
+  
+  .blogTitle:hover {
     color: var(--title-hover-color);
-}
-
-.blogDescription {
+  }
+  
+  .blogDescription {
     font-size: 13px;
-}
-
-.blogInfo {
-    padding: 20px;
-}
-
-.blogImage img {
-    width: 320px;
+  }
+  
+  .blogInfo {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  
+  .blogImage img {
+    width: 250px;
     height: 100%;
-}
-
-
-.extraInformation {
+    margin-right: 20px;
+    transition: transform var(--hover-transition-duration);
+  }
+  
+  .blogImage img:hover {
+    transform: scale(1.1);
+  }
+  
+  .extraInformation {
     margin-top: 15px;
     display: flex;
     gap: 50px;
-}
-
-.extraInformation p {
+  }
+  
+  .extraInformation p {
     font-size: 13px;
     text-transform: capitalize;
-}
-
-.dateContainer {
+  }
+  
+  .dateContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.date {
+  }
+  
+  .date {
     color: #aaaaaa;
-}
+  }

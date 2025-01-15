@@ -82,4 +82,4 @@ function GamesPage() {
   );
 }
 
-export default GamesPage;
+export default GamesPage
