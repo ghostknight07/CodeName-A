@@ -5,12 +5,13 @@
 .pxy-10 {
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
 
 
 
 .blog-container {
-    width: 95%;
+    width: 95%;;
     margin: auto auto;
     height: 100dvh;
 }
@@ -22,9 +23,7 @@
     height: 90dvh;
 }
 
-.blog-section .populer-picks {
-    flex-grow: 1;
-}
+
 
 .blogs {
     width: 100%;
