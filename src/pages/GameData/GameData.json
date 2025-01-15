@@ -9,7 +9,15 @@
         "gameType": "PC",
         "gameGenres": "Genre(s): Action | Adventure | Sandbox",
         "gameCracked": "Fitgirl",
-        "isPopular": true
+        "isPopular": true,
+        "fileSize": "50 GB",
+        "specs": {
+            "OS": "Windows",
+            "CPU": "Intel",
+            "GPU": "Nvidia",
+            "RAM": "16 GB",
+            "Storage": "1 TB"
+        }
     },
 
     {
