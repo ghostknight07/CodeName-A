@@ -2,10 +2,8 @@
     text-align: left;
     display: flex;
     flex-direction: row;
-    background-color: #7ab2d31d;
-    margin-right: 0px;
+    background-color: #7ab2d31d; 
     margin-bottom: 20px;
-    width: 260px;
     height: 143px;
     min-height: 110px;
   }

@@ -21,6 +21,7 @@ function GamesPage() {
 
   return (
     <div className={style.GamesPageMain}>
+         
       <img
         className={style.GamesPageBackground}
         src="https://wallpapercave.com/wp/wp2196807.jpg"
@@ -28,6 +29,7 @@ function GamesPage() {
       />
       <div className={style.GameFullPage}>
         <Navbar />
+
         <div className={style.GamePageContainer}>
           {/* Main Games List */}
           <div className={style.GameContainer}>
@@ -42,6 +44,9 @@ function GamesPage() {
                 gameGenres={game.gameGenres}
                 gameCracked={game.gameCracked}
               />
+
+
+           
             ))}
           </div>
 
