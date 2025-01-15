@@ -1,18 +1,12 @@
 
 .blogFullPage {   /* Container for blog and populer section */
-   
-    width: 95%;;
+    width: 95%;
     margin: auto auto;
     height: 100dvh;
-
 }
  .blogSection-container{   /* Container for blog and populer section */
     display: flex;
-
     margin-top: 20px;
-    
-   
-    
 }
 
 .NormalblogSection-container { /* Container for blog  */
@@ -26,7 +20,6 @@
     margin-left: 10px;
     padding-top: 10px;
     width: 25%;
-    
 }    
 
 
