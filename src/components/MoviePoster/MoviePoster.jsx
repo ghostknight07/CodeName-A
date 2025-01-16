@@ -20,7 +20,7 @@ export default function MoviePoster(props) {
       </div>
 
       {/* Movie name */}
-      <div><p>{props.movieName}</p></div>
+      <div className='movie-name'><p>{props.movieName}</p></div>
 
     </div>
   );
