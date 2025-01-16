@@ -34,7 +34,7 @@ function MoviePage() {
 
       <div className="moviepage-container">
         <Navbar />
-
+       <div className="moviepageResources-Container">
         <div className="poster-grid">
           {/* this snippet will take movie data from 'movieData.js' and put it on the page */}
           {currentMovies.map((movie, index) => (
@@ -49,6 +49,7 @@ function MoviePage() {
               />
             </Link>
           ))}
+        </div>
         </div>
 
         {/* Pagination buttons */}
