@@ -22,9 +22,18 @@
     min-height: 100vh;
     background-color: #00000000;
   }
+
+  .GamesResorcesContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+  }
   
 .GamePageContainer {
   display: flex;
+  flex-direction: row;
   margin-top: 20px;
 }
 
@@ -45,4 +54,36 @@
 .PopularGamesHeader{
   font-size: 20px;
   font-weight: 400; 
+}
+
+
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensures it is positioned relative to its container */
+  margin-top: auto; /* Pushes it to the bottom of the container */
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.paginationButton {
+  padding: 8px 12px;
+  background-color: #f0f0f000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.paginationButton:hover {
+  background-color: #ffffffcc;
+}
+
+.activePage {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-color: #007bff;
 }
