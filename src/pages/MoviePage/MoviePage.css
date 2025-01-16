@@ -11,9 +11,15 @@
 
 .moviepage-container{
   width: 95%;
-  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100dvh;
 }
-
+.moviepageResources-Container{
+  width: 100%;
+}
 /* Container for grid layout */
 .poster-grid {
   display: grid;
@@ -58,46 +64,34 @@
   /* Optional: rounded corners on image */
 }
 
-.button-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
 
-.show-more-btn {
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  color: black;
-  font-size: 1rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-}
 
-.show-more-btn:hover {
-  background-color: #ffffffe3;
-}
 
 .pagination-container {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  align-items: center;
+  position: relative; /* Ensures it is positioned relative to its container */
+  margin-top: auto; /* Pushes it to the bottom of the container */
+  padding: 20px 0;
+  gap: 10px;
 }
 
+
 .pagination-button {
-  background-color: #f0f0f0;
-  border: none;
-  margin: 0 5px;
-  padding: 10px 15px;
-  cursor: pointer;
+  padding: 8px 12px;
+  background-color: #f0f0f000;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .pagination-button.active {
   background-color: #007bff;
   color: white;
+  font-weight: bold;
+  border-color: #007bff;
 }
 
 .pagination-button:hover {
