@@ -1,0 +1,11 @@
+.GameDetailsFullPage {
+    width: 95%;
+  margin: auto auto;
+  min-height: 100vh;
+}
+
+.GameDetailsContainer{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 20px;
+}

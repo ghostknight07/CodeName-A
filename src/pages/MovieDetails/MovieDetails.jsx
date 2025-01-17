@@ -1,7 +1,6 @@
-// implement the button component
-import './MovieDetails.css';
-
-import { useParams, } from "react-router-dom";
+import style from "./MovieDetails.module.css";
+import Navbar from "../../components/Navbar/Navbar";
+import { useParams } from "react-router-dom";
 import movieData from "../MovieData/movieData.json"; // Import your movie data
 
 function MovieDetails() {
@@ -15,15 +14,20 @@ function MovieDetails() {
   }
 
   return (
-    <div className="movie-details"> 
-      <div className='movie-details-container'>
-        <a href='/streaming'>
-          <button id="button-component">go back</button>
-        </a>
+    <div className={style.MovieDetailsMainPage}>
+      <div className={style.MovieDetailsFullpage}>
+        <Navbar />
+        <div className={style.MovieDetailsResorcesContainer}>
+          <div className={style.MovieDetailsContainer}>
+            <a href="/streaming">
+            <h1>{movie.movieName}</h1>
+            <img src={movie.posterUrl} alt={movie.movieName} />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
 export default MovieDetails;
-
