@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar/Navbar.jsx";
 import Blog from "../../components/Blog/Blog.jsx";
 import PopularBlog from "../../components/PopularBlog/PopularBlog.jsx";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 // Importing blog data JSON file
 import blogData from "../BlogData/BlogData.json";
@@ -14,7 +15,7 @@ function BlogPage() {
   const [currentPage, setCurrentPage] = useState(1);
 
   // Get blogs for the current page
-  const currentBlogs = blogData.slice(
+  const blog = blogData.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
@@ -34,30 +35,35 @@ function BlogPage() {
         <div className="blogSection-container">
           {/* Normal Blogs Section */}
           <div className="NormalblogSection-container">
-            {currentBlogs.map((blog, index) => (
-              <Blog
-                key={index}
-                authorName={blog.authorName}
-                blogTitle={blog.blogTitle}
-                blogDescription={blog.blogDescription}
-                pubDate={blog.pubDate}
-                blogImage={blog.blogImage}
-              />
+            {blog.map((blog, index) => (
+              <Link to={`/blog/${blog.id}`} key={blog.id}>
+                <Blog
+                  key={index}
+                  authorName={blog.authorName}
+                  blogTitle={blog.blogTitle}
+                  blogDescription={blog.blogDescription}
+                  pubDate={blog.pubDate}
+                  blogImage={blog.blogImage}
+                />
+              </Link>
             ))}
           </div>
       
 
+
           {/* Popular Blogs Section */}
           <div className="populerSection-container">
-            {currentBlogs.map(
+            {blog.map(
               (blog, index) =>
                 blog.isPopular && (
-                  <PopularBlog
-                    key={index}
-                    blogTitle={blog.blogTitle}
-                    blogImage={blog.blogImage}
-                    authorName={blog.authorName}
-                  />
+                  <Link to={`/blogs/${blog.id}`} key={blog.id}>
+                    <PopularBlog
+                      key={index}
+                      blogTitle={blog.blogTitle}
+                      blogImage={blog.blogImage}
+                      authorName={blog.authorName}
+                    />
+                  </Link>
                 )
             )}
           </div>

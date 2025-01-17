@@ -62,6 +62,7 @@ function GamesPage() {
               <br />
               <div className={style.PopularGamesContainer}>
                 {popularGames.map((game, index) => (
+                   <Link to={`/games/${game.id}`} key={game.id}>
                   <PopularGames
                     key={index}
                     gameTitle={game.gameName}
@@ -70,6 +71,7 @@ function GamesPage() {
                     gameType={game.gameType}
                     gameCracked={game.gameCracked}
                   />
+                  </Link>
                 ))}
               </div>
             </div>
