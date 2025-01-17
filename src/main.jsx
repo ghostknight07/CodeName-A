@@ -11,6 +11,7 @@ import MoviePage from './pages/MoviePage/MoviePage.jsx';
 import MovieDetails from './pages/MovieDetails/MovieDetails.jsx';
 import RequestPage from './pages/RequestPage/RequestPage.jsx';
 import BlogPage from './pages/Blog/BlogPage.jsx';
+import BlogDetails from './pages/BlogDetails/BlogDetails.jsx';
 import GamesPage from './pages/GamesPage/GamesPage.jsx';
 import GamesDetails from './pages/GamesDetails/GamesDetails.jsx';
 
@@ -42,6 +43,13 @@ const router = createBrowserRouter([
     element: <BlogPage />,
     errorElement: <NotFound />,
   },
+
+  {
+    path: '/blog/:id',
+    element: <BlogDetails />,
+    errorElement: <NotFound />,
+  },
+  
   {
     path: '/request',
     element: <RequestPage />,
