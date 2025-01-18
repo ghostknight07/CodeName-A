@@ -1,11 +1,12 @@
-.BlogDetailsFullPage {
+.MovieDetailsFullpage {
     width: 95%;
-    margin: auto auto;
     height: 100dvh;
+    margin: auto auto;
 }
 
-.BlogDetailsContainer{
+.MovieDetailsResorcesContainer{
     width: 100%;
     height: 100dvh;
     margin-top: 20px;
 }
+

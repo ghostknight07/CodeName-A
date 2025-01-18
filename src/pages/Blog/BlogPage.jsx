@@ -56,7 +56,7 @@ function BlogPage() {
             {blog.map(
               (blog, index) =>
                 blog.isPopular && (
-                  <Link to={`/blogs/${blog.id}`} key={blog.id}>
+                  <Link to={`/blog/${blog.id}`} key={blog.id}>
                     <PopularBlog
                       key={index}
                       blogTitle={blog.blogTitle}
