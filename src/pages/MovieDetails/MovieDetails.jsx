@@ -4,7 +4,8 @@ import { useParams } from "react-router-dom";
 import movieData from "../MovieData/movieData.json"; // Import your movie data
 import { FaImdb } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-import { DiCelluloid } from "react-icons/di";
+import { IconContext } from "react-icons";
+//import { DiCelluloid } from "react-icons/di";
 
 // Styles for icons
 
@@ -37,21 +38,27 @@ function MovieDetails() {
            
           
            <div className={style.MovieDetailsMovieName} >
-            <h1>{movie.movieName}</h1>
+            <h1 className={style.MovieName}>{movie.movieName}</h1>
            </div>
            
            <div className={style.MovieDetailsDRT}>
             <p className={style.MovieDetailsDRT}>{movie.movieDRT}</p>
            </div>
             
-           <div classname={style.MovieDetailsRatingContainer}>
-           <div className={style.MovieDetailsRatingIcon}>
-            <FaImdb/>
-            <FaStar />
-            </div>
-            <div className={style.MovieDetailsRating}>
-             <p className={style.MovieDetailsRating}>{movie.movieRating}</p>
-             </div>
+           <div className={style.MovieDetailsRatingContainer}>
+              <div>
+                <IconContext.Provider value={{ color: "yellow", size: "1.5em" }}>
+                  <FaImdb />
+                </IconContext.Provider>
+              </div>
+              <div>
+                <IconContext.Provider value={{ color: "yellow", size: "1.5em" }}>
+                  <FaStar />
+                </IconContext.Provider></div>
+              
+              <div className={style.MovieDetailsRating}>
+                <p className={style.MovieDetailsRating}><span className={style.RatingSpan}>{movie.movieRating}</span>/10</p>
+              </div>
             </div>
 
             <div className={style.MovieDetailsDescriptionContainer}>

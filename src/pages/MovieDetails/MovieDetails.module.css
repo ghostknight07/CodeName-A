@@ -1,14 +1,20 @@
+:root{
+    --rating-clr : 'yellow';
+}
+
 .GamesPageBackground{
     height: 100dvh;
     width: 100%;
     position: fixed;
     z-index: -1;
-    filter: blur(1PX);
+    filter: blur(1px);
     opacity: 0.6;
   }
   
 
-
+.MovieName{
+    font-size: 2.5rem;
+}
 
 
 .MovieDetailsFullpage {
@@ -59,9 +65,21 @@
 .MovieDetailsRatingContainer{
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+}
+.MovieDetailsRatingContainer p{
+    font-size: 20px;
 }
 
+.MovieDetailsRatingContainer{
+    margin-bottom: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.RatingSpan{
+    font-weight: bold;
+    color: var(--rating-clr);
+}
 
 .MovieDetailsDescriptionContainer{
     margin-bottom: 10px;
