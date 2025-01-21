@@ -2,17 +2,34 @@
     {
         "id": 17,
         "movieName": "Sonic the Hedgehog 3",
-        "posterUrl": "https://resizing.flixster.com/stIwab1KImKTQYXoxKDSpXjsLAc=/206x305/v2/https://resizing.flixster.com/5yCDU3YndW2EIWaEwH1FydaMwZI=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2E0MGM5YTk5LTdhY2UtNGYzNS04NGVmLTJlNjRkYjljNjQ4ZS5qcGc="
+        "movieDRT" : "2022 | PG-13 | 1h-42min",
+        "movieRating": "9.3",
+        "movieGenre": "Genre(s): Animation | Action | Adventure | Comedy ",
+        "movieDescription": "Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched in every way, Team Sonic must seek out an unlikely alliance in hopes of stopping Shadow and protecting the planet.",
+        "posterUrl": "https://resizing.flixster.com/stIwab1KImKTQYXoxKDSpXjsLAc=/206x305/v2/https://resizing.flixster.com/5yCDU3YndW2EIWaEwH1FydaMwZI=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2E0MGM5YTk5LTdhY2UtNGYzNS04NGVmLTJlNjRkYjljNjQ4ZS5qcGc=",
+        "movieBackground":"https://m.media-amazon.com/images/M/MV5BMDgzMzk5MzItMTU0My00MDA1LWI1N2ItMzM2NjQ1M2ZmZDk3XkEyXkFqcGc@._V1_FMjpg_UX2160_.jpg"
     },
+
     {
         "id": 16,
         "movieName": "Dune: part two",
-        "posterUrl":  "https://resizing.flixster.com/QwO-nRLkBjU8-BlAz7xHdvUvalE=/206x305/v2/https://resizing.flixster.com/PgHhmCKS3hR6GUsVNlC-vZ9d90I=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZhOTA0OTIzLTEwNDctNDhkNS1iNTc3LTY3MjBmNDc5OGU1Mi5qcGc="
+        "movieDRT" : "2022 | PG-13 | 1h-48min",
+        "movieRating": "9.3",
+        "movieGenre": "Genre(s): Action | Adventure | Drama | Science Fiction",
+        "movieDescription":"Paul Atreides unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he endeavors to prevent a terrible future only he can foresee.—Warner Bros. Pictures.",
+        "posterUrl":  "https://resizing.flixster.com/QwO-nRLkBjU8-BlAz7xHdvUvalE=/206x305/v2/https://resizing.flixster.com/PgHhmCKS3hR6GUsVNlC-vZ9d90I=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZhOTA0OTIzLTEwNDctNDhkNS1iNTc3LTY3MjBmNDc5OGU1Mi5qcGc=",
+        "movieBackground": "https://m.media-amazon.com/images/M/MV5BMjllZWVkOTItN2NjMi00ZDY2LWI0YzctZjAwMWViMGQ2OGFkXkEyXkFqcGc@._V1_FMjpg_UX2160_.jpg"
     },
     {
         "id": 15,
-        "movieName": "Dune",
-        "posterUrl":  "https://resizing.flixster.com/9cA15MFFCoFW0NPFlVue7pVHF0Q=/206x305/v2/https://resizing.flixster.com/gcRn4_emLo1Iz5ndbvUOKDYq35c=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzdhYTI2NDJkLTU5YTYtNDNkOS05ZWQxLWZiNjFlOTZmYjZlZS5qcGc="
+        "movieName": "Dune",    
+        "movieDRT" : "2021 | PG-13 | 1h-48min",
+        "movieRating": "9.3",
+        "movieGenre": "Genre(s): Action | Adventure | Drama | Science Fiction",     
+        "movieDescription": "Paul Atreides, a brilliant and gifted young man born into a great family but destined to become a shapeshifting creature called a",
+
+        "posterUrl":  "https://resizing.flixster.com/9cA15MFFCoFW0NPFlVue7pVHF0Q=/206x305/v2/https://resizing.flixster.com/gcRn4_emLo1Iz5ndbvUOKDYq35c=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzdhYTI2NDJkLTU5YTYtNDNkOS05ZWQxLWZiNjFlOTZmYjZlZS5qcGc=",
+        "movieBackground":"https://m.media-amazon.com/images/M/MV5BMDgzMzk5MzItMTU0My00MDA1LWI1N2ItMzM2NjQ1M2ZmZDk3XkEyXkFqcGc@._V1_FMjpg_UX2160_.jpg"
     },
     {
         "id": 14,
