@@ -62,11 +62,11 @@ function MovieDetails() {
             </div>
 
             <div className={style.MovieDetailsDescriptionContainer}>
-            <p className={style.MovieDetailsDescription}>{movie.movieDescription}</p>
+              <p className={style.MovieDetailsDescription}>{movie.movieDescription}</p>
             </div>
 
             <div className={style.MovieDetailsGenreContainer}>
-            <p className={style.MovieDetailsGenre}>{movie.movieGenre}</p>
+            <p className={style.MovieDetailsGenre}><span>Genre(s):</span>{movie.movieGenre}</p>
             </div>
 
             <div className={style.MovieDetailsWatchContainer}>
