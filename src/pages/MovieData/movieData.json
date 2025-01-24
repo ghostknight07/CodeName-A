@@ -78,7 +78,7 @@
         "movieGenre":"Action | Adventure | Comedy | Science Fiction | Time Travel ",
       "movieDescription":"Adam Reed, age 12 and still grieving his father's sudden death the year before, walks into his garage one night to find a wounded pilot hiding there. This mysterious pilot turns out to be the older version of himself from the future, where time travel is in its infancy. He has risked everything to come back in time on a secret mission. Together they must embark on an adventure into the past to find their father, set things right, and save the world. As the three work together, both young and grown Adam come to terms with the loss of their father and have a chance to heal the wounds that have shaped them. Adding to the challenge of the mission, the two Adams discover that they really don't like each other much, and if they are to save the world, first they need to figure out how to get along.",
         "posterUrl": "https://resizing.flixster.com/QUa95iKumIJUuhFZx6cb5xYKQD8=/206x305/v2/https://resizing.flixster.com/IHo_T0U-Ml6Hze4m5mjhQOuSlxk=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ1ZGViNThlLTcxNDQtNDM3Ny05NzI5LTA5OGM0OGJiNWQ1NS5qcGc=",
-        "movieBackground":"https://m.media-amazon.com/images/M/MV5BMTM3YmVhY2QtZjZiOS00NDM4LTk4YmItNWZjZjFjMzNkYTQ1XkEyXkFqcGc@._V1_FMjpg_UX1920_.jpg"
+        "movieBackground":"https://image.tmdb.org/t/p/original/jVJKVRj85SSzJlRqVW3i4GjLVrP.jpg"
     },
     {
         "id": 9,
@@ -93,7 +93,8 @@
     {
         "id": 7,
         "movieName": "Blade Runner 2049",
-        "posterUrl": "https://resizing.flixster.com/e0yEXMKWcKU8_JJ4i3vu45poKbI=/206x305/v2/https://resizing.flixster.com/73VCeyfsM8UDQ0o7IjUIcXr7jd8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RlNzI0MGQyLTQ2ZTktNGMyYi05N2VmLTFjMDhiY2VlMDQ2Ni53ZWJw"
+        "posterUrl": "https://resizing.flixster.com/e0yEXMKWcKU8_JJ4i3vu45poKbI=/206x305/v2/https://resizing.flixster.com/73VCeyfsM8UDQ0o7IjUIcXr7jd8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RlNzI0MGQyLTQ2ZTktNGMyYi05N2VmLTFjMDhiY2VlMDQ2Ni53ZWJw",
+        "movieBackground": "https://image.tmdb.org/t/p/original/uKbX1ha7KWyTecvpPpRCB3iFfj3.jpg"
     },
     {
         "id": 6,
