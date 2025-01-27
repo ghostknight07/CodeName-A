@@ -40,6 +40,12 @@
   margin-left: 0px;
 }
 
+.nav-logo h1{
+    font-family: 'Built Titling', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
 .logo {
   /*font-size: clamp(1.125rem, 0.8142rem + 1.326vw, 1.875rem);*/
   font-weight: 800;

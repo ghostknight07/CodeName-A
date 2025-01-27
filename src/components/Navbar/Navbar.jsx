@@ -3,7 +3,7 @@ import './Navbar.css';
 export default function Navbar() {
   return (
     <header className="nav-header">
-      <div>
+      <div className='nav-logo'>
         <a href="/">
             <h1>CodeName A</h1>
         </a>
