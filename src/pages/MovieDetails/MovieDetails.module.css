@@ -1,3 +1,10 @@
+:root{
+    --rating-clr: #deb522;
+    --genre-clr: #deb522;
+    --description-clr: #EDEDED;
+}
+
+
 .GamesPageBackground {
     height: 100dvh;
     width: 100%;
