@@ -41,7 +41,7 @@
 }
 
 .nav-logo h1{
-    font-family: 'Built Titling', sans-serif;
+    font-family: var(--build-titling-fnt);
     font-weight: 400;
     letter-spacing: 2px;
 }
