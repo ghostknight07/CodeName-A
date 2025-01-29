@@ -51,6 +51,69 @@
   font-weight: 800;
 }
 
+/* Keep existing styles unchanged */
+
+/* Dropdown Button */
+.dropbtn {
+  background: none;
+  outline: 1px solid red;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(0.75rem, 0.6464rem + 0.442vw, 1rem);
+  position: relative;
+  margin-left: 20px;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  text-align: left;
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  margin-left: 0px !important;
+}
+
+/* Show Dropdown */
+.dropdown-content.show {
+  display: block;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+  transform: translateX(-20px);
+  width: 88%;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure dropdown aligns with existing nav styles */
+.nav-links .dropdown {
+  display: inline-block;
+}
+
+
 @media screen and (max-width: 460px) {
   .logo-nav {
     width: 100px;
