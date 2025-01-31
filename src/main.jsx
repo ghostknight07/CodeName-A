@@ -14,6 +14,7 @@ import BlogPage from './pages/Blog/BlogPage.jsx';
 import BlogDetails from './pages/BlogDetails/BlogDetails.jsx';
 import GamesPage from './pages/GamesPage/GamesPage.jsx';
 import GamesDetails from './pages/GamesDetails/GamesDetails.jsx';
+import AnimePage from './pages/AnimePage/animePage.jsx';
 
 
 // in case of any error
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
   {
     path: '/movies',
     element: <MoviePage />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: '/anime',
+    element: <AnimePage />, 
     errorElement: <NotFound />,
   },
   {

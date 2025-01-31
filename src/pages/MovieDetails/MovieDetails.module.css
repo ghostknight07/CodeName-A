@@ -1,7 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/built-titling');
 :root{
     --rating-clr: #deb522;
     --genre-clr: #deb522;
     --description-clr: #EDEDED;
+    --build-titling-fnt : 'Built Titling', sans-serif;
 }
 
 
@@ -89,6 +91,7 @@
 }
 
 .MovieDetailsDescriptionContainer {
+    font-family: "Built Titling", sans-serif;
     margin-bottom: 10px;
     margin-top: 10px;
     width: 40%;
