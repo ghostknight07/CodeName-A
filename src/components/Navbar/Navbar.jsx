@@ -19,6 +19,7 @@ export default function Navbar() {
           </button>
           <div className={`dropdown-content`}>
             <a href="/movies">Movies</a>
+            <a href="/anime">Anime</a>
             <a href="/Tv Series">Tv Series</a>
           </div>
         </div>
