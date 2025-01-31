@@ -6,9 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-
 
 .nav-links a {
   margin-left: 20px;
@@ -16,13 +14,11 @@
   padding-top: 16px;
   padding-bottom: 16px;
   position: relative;
-  /* Ensures the pseudo-element is positioned relative to this element */
   font-size: clamp(0.75rem, 0.6464rem + 0.442vw, 1rem);
 }
 
 .nav-links a::after {
   content: "";
-  /* Absolute positioning for proper placement */
   position: absolute;
   width: 0%;
   height: 2px;
@@ -40,23 +36,20 @@
   margin-left: 0px;
 }
 
-.nav-logo h1{
-    font-family: var(--build-titling-fnt);
-    font-weight: 400;
-    letter-spacing: 2px;
+.nav-logo h1 {
+  font-family: var(--build-titling-fnt);
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .logo {
-  /*font-size: clamp(1.125rem, 0.8142rem + 1.326vw, 1.875rem);*/
   font-weight: 800;
 }
 
-/* Keep existing styles unchanged */
-
 /* Dropdown Button */
 .dropbtn {
-    text-align: right;
-    width: 80px;
+  text-align: right;
+  width: 80px;
   background: none;
   color: white;
   font-weight: 600;
@@ -64,7 +57,7 @@
   cursor: pointer;
   font-size: clamp(0.75rem, 0.6464rem + 0.442vw, 1rem);
   position: relative;
-  margin-left: 60px;
+  margin-left: 10px;
 }
 
 /* Dropdown Container */
@@ -88,8 +81,8 @@
   margin-left: 0px !important;
 }
 
-/* Show Dropdown */
-.dropdown-content.show {
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -113,7 +106,6 @@
 .nav-links .dropdown {
   display: inline-block;
 }
-
 
 @media screen and (max-width: 460px) {
   .logo-nav {
