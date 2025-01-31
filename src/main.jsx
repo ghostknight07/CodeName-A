@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/streaming',
+    path: '/movies',
     element: <MoviePage />,
     errorElement: <NotFound />,
   },

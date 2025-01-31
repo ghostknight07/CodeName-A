@@ -55,15 +55,16 @@
 
 /* Dropdown Button */
 .dropbtn {
+    text-align: right;
+    width: 80px;
   background: none;
-  outline: 1px solid red;
   color: white;
   font-weight: 600;
   border: none;
   cursor: pointer;
   font-size: clamp(0.75rem, 0.6464rem + 0.442vw, 1rem);
   position: relative;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 
 /* Dropdown Container */
