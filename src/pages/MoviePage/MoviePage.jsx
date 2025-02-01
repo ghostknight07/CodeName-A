@@ -8,18 +8,6 @@ import "./MoviePage.css";
 function MoviePage() {
   let howManyPostersShouldBeSeen = 12;
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(movieData.length / howManyPostersShouldBeSeen);
-  const indexOfLastMovie = currentPage * howManyPostersShouldBeSeen;
-  const indexOfFirstMovie = indexOfLastMovie - howManyPostersShouldBeSeen;
-  const currentMovies = movieData.slice(indexOfFirstMovie, indexOfLastMovie);
-
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
-
-  // adding search was a hell of a task!
-
-  // Search functionality
   const [searchTerm, setSearchTerm] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const searchRef = useRef(null);
@@ -43,6 +31,20 @@ function MoviePage() {
     };
   }, []);
 
+  // Filter movies first before paginating
+  const filteredMovies = movieData.filter((movie) =>
+    movie.movieName.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const totalPages = Math.ceil(filteredMovies.length / howManyPostersShouldBeSeen);
+  const indexOfLastMovie = currentPage * howManyPostersShouldBeSeen;
+  const indexOfFirstMovie = indexOfLastMovie - howManyPostersShouldBeSeen;
+  const currentMovies = filteredMovies.slice(indexOfFirstMovie, indexOfLastMovie);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <div className="moviePage-main">
       <img
@@ -51,7 +53,6 @@ function MoviePage() {
       />
 
       <div className="moviepage-container">
-        {/* Pass toggleSearch function to Navbar */}
         <Navbar seachfunction={toggleSearch} />
 
         {/* Search Bar */}
@@ -62,42 +63,38 @@ function MoviePage() {
               type="text"
               placeholder="Search"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(e) => {
+                setSearchTerm(e.target.value);
+                setCurrentPage(1); // Reset to first page when searching
+              }}
             />
           </div>
         )}
 
         <div className="moviepageResources-Container">
           <div className="poster-grid">
-            {currentMovies
-              .filter((movie) =>
-                movie.movieName.toLowerCase().includes(searchTerm.toLowerCase())
-              )
-              .map((movie, index) => (
-                <Link to={`/movies/${movie.id}`} key={index} state={movie}>
-                  <MoviePoster
-                    posterUrl={movie.posterUrl}
-                    movieName={movie.movieName}
-                  />
-                </Link>
-              ))}
+            {currentMovies.map((movie) => (
+              <Link to={`/movies/${movie.id}`} key={movie.id} state={movie}>
+                <MoviePoster posterUrl={movie.posterUrl} movieName={movie.movieName} />
+              </Link>
+            ))}
           </div>
         </div>
 
         {/* Pagination */}
-        <div className="pagination-container">
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index}
-              className={`pagination-button ${
-                index + 1 === currentPage ? "active" : ""
-              }`}
-              onClick={() => handlePageChange(index + 1)}
-            >
-              {index + 1}
-            </button>
-          ))}
-        </div>
+        {totalPages > 1 && (
+          <div className="pagination-container">
+            {Array.from({ length: totalPages }, (_, index) => (
+              <button
+                key={index}
+                className={`pagination-button ${index + 1 === currentPage ? "active" : ""}`}
+                onClick={() => handlePageChange(index + 1)}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
