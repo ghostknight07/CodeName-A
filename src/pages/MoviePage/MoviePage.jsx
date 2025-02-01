@@ -1,29 +1,47 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import MoviePoster from "../../components/MoviePoster/MoviePoster";
-// movieData.js is the file where we will put out movie info
 import movieData from "../MovieData/movieData.json";
 import "./MoviePage.css";
 
 function MoviePage() {
-  // this state will help us show like 10 movies and then a
-  // button will help us "show more"
-  let howManyPostersShouldBeSeen = 12; // Movies per page
+  let howManyPostersShouldBeSeen = 12;
   const [currentPage, setCurrentPage] = useState(1);
-
-  // Calculate the total number of pages
   const totalPages = Math.ceil(movieData.length / howManyPostersShouldBeSeen);
-
-  // Calculate the movies to display for the current page
   const indexOfLastMovie = currentPage * howManyPostersShouldBeSeen;
   const indexOfFirstMovie = indexOfLastMovie - howManyPostersShouldBeSeen;
   const currentMovies = movieData.slice(indexOfFirstMovie, indexOfLastMovie);
 
-  // Function to handle page change
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
+
+  // adding search was a hell of a task!
+
+  // Search functionality
+  const [searchTerm, setSearchTerm] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const searchRef = useRef(null);
+
+  // Function to toggle search visibility
+  const toggleSearch = () => {
+    setIsOpen(true);
+  };
+
+  // Close search when clicking outside
+  const handleClickOutside = (event) => {
+    if (searchRef.current && !searchRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="moviePage-main">
@@ -33,26 +51,40 @@ function MoviePage() {
       />
 
       <div className="moviepage-container">
-        <Navbar />
-       <div className="moviepageResources-Container">
-        <div className="poster-grid">
-          {/* this snippet will take movie data from 'movieData.js' and put it on the page */}
-          {currentMovies.map((movie, index) => (
-            <Link
-              to={`/movies/${movie.id}`} // movie's unique id routing
-              key={index}
-              state={movie} // pass movie data using react states
-            >
-              <MoviePoster
-                posterUrl={movie.posterUrl}
-                movieName={movie.movieName}
-              />
-            </Link>
-          ))}
-        </div>
+        {/* Pass toggleSearch function to Navbar */}
+        <Navbar seachfunction={toggleSearch} />
+
+        {/* Search Bar */}
+        {isOpen && (
+          <div ref={searchRef} className="search-bar-container">
+            <input
+              className="search-bar"
+              type="text"
+              placeholder="Search"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
+        )}
+
+        <div className="moviepageResources-Container">
+          <div className="poster-grid">
+            {currentMovies
+              .filter((movie) =>
+                movie.movieName.toLowerCase().includes(searchTerm.toLowerCase())
+              )
+              .map((movie, index) => (
+                <Link to={`/movies/${movie.id}`} key={index} state={movie}>
+                  <MoviePoster
+                    posterUrl={movie.posterUrl}
+                    movieName={movie.movieName}
+                  />
+                </Link>
+              ))}
+          </div>
         </div>
 
-        {/* Pagination buttons */}
+        {/* Pagination */}
         <div className="pagination-container">
           {Array.from({ length: totalPages }, (_, index) => (
             <button
@@ -72,4 +104,3 @@ function MoviePage() {
 }
 
 export default MoviePage;
-

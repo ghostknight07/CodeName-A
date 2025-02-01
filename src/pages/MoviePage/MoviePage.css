@@ -98,3 +98,21 @@
   background-color: #ddd;
 }
 
+.search-bar-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  background-color: #212121;
+  color: white;
+  width: 350px;
+  height: 25px;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}

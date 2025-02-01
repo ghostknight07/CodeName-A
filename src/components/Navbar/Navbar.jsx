@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import PropTypes from 'prop-types';
 import './Navbar.css';
+import { FaSearch } from "react-icons/fa";
 
-export default function Navbar() {
+export default function Navbar({ seachfunction }) {
   return (
     <header className="nav-header">
       <div className='nav-logo'>
@@ -29,6 +30,16 @@ export default function Navbar() {
         <a href="/games">Games</a>
         <a href="/request">Request</a>
       </div>
+      <div>
+        {/* onclick is a prop in react */}
+        <button className='nav-search-btn' onClick={seachfunction}><FaSearch /></button>
+      </div>
     </header>
   );
 }
+
+
+// prop validation
+Navbar.propTypes = {
+  seachfunction: PropTypes.func,
+};

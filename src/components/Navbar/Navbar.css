@@ -107,6 +107,16 @@
   display: inline-block;
 }
 
+.nav-search-btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+  font-size: clamp(0.75rem, 0.6464rem + 0.442vw, 1rem);
+}
+
 @media screen and (max-width: 460px) {
   .logo-nav {
     width: 100px;
