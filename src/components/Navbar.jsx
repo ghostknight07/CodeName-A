@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+// tailwind css in use
+
 export default function Navbar() {
     return(
         <div className="w-full h-[70px] border-b border-gray-600">
