@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from "next/link";
+import NavMobile from "./NavMobile.jsx";
 
 // tailwind css in use
 
@@ -11,7 +12,12 @@ export default function Navbar() {
                         <h1 className="text-3xl text-slate-100 font-semibold">CodeName-A</h1>
                     </Link>
                 </div>
+    
                 <div>
+                    <NavMobile />
+                </div>
+
+                <div className="hidden sm:block">
                     <ul className="flex gap-4">
                         <li className="px-3 py-1 hover:bg-gray-600 rounded-sm">
                             <Link href="/">Home</Link>
